@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contabilidad - Plantel 26</title>
+    <style>
+       .practicas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .practicas img {
+        width: 200px;
+        cursor: pointer;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .practicas img:hover {
+        border-color: #666;
+    }
+
+    /* Estilo del modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 80%;
+    }
+
+    .cerrar {
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .cerrar:hover {
+        color: #bbb;
+    }
+
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        /* Logo dentro del encabezado */
+        .logo-superior {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Encabezado con logo y títulos */
+        .encabezado {
+            background: linear-gradient(135deg, #003366, #336699);
+            color: white;
+            padding: 40px 20px;
+            border-bottom: 5px solid #002244;
+            border-radius: 0 0 30px 30px;
+            animation: fadeInUp 1.2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-encabezado {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .titulos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 28px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .contenido {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logo y títulos -->
+    <header class="encabezado" id="inicio">
+        <div class="contenedor-encabezado">
+           
+            <div class="titulos">
+                 <h1 class="titulo">CONTABILIDAD</h1>
+                <h1 class="titulo">COLEGIO DE BACHILLERES DEL ESTADO DE PUEBLA</h1>
+                <h1 class="titulo">PLANTEL 26</h1>
+                
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Materias">Materias</a>
+        <a href="#Practicas">Practicas</a>
+        <a href="#Actividades">Actividades</a>
+        <a href="#entrevistas">Entrevistas</a>
+        <a href="#Conclusion">Conclusion</a>
+    </nav>
+ 
+    <div class="contenido" id="Inicio">
+        <h2>inicio</h2>
+        <p>Esta capacitación tiene como propósito: Desarrollar las competencias y habilidades prácticas que permitan de forma ética y responsable aplicar el proceso contable y administrativo para el uso de la información financiera, la cual debe ser veraz, confiable y oportuna para la toma de decisiones en beneficio de la entidad y el sector económico en el que se desarrolle; el estudiante desarrolla habilidades en clasificación de entidades económicas, registros contables, elaboración de estados financieros, cálculo de costos, gastos, nómina, contribuciones y el desarrollo del plan de negocios que le permiten desempeñarse en una actividad laboral como auxiliar contable y administrativo, además de desarrollar actividades productivas por su propia cuenta con una actitud emprendedora.</p>
+ <h2></h2>
+<p>En esta sección conocerás a fondo en qué consiste la capacitación contable. A través de un video donde profesor Mendez Prez Marco Antonio quien imparte la capacitacion explica las áreas laborales, las experiencias reales de los estudiantes,actividades que se realizan para desarrollar habilidades clave dentro del campo contable,las materias,como certificar la capacitacion,etc.<br>
+   
+
+<a href="https://youtu.be/ttkJ3fdZdbk?si=4mHKd_o5oBlWSbPv" target="_blank">
+  Ver video en YouTube
+</a>
+
+    <div class="contenido" id="Materias">
+        
+         <h2>Materias</h2>
+         <h3>3er semestre</h2>
+        <ul>
+            <li>ADMINISTRACION DE ORGANIZACIONES</li>
+            <li>PENSAMIENTO MATEMATICO I</li>
+            <li>INGLES III</li>
+            <li>HUMANIDADES III</li>
+            <li>REGISTRO DE OPERACIONES CONTABLES</li>
+            <li>LENGUA Y COMUNICACION I</li>
+            <li>CURRICULUM APLICADO</li>
+            <li>ECOSISTEMAS:INTERACCIONES,ENERGIA Y DINAMICA</li>
+            <li>LABORATORIO DE INGLES</li>
+            <li>TALLER DE CIENCIAS II</li>
+        </ul>
+            <h3>4to semestre</h3>
+        <ul>
+            <li>CONTABILIDAD DE COSTOS</li>
+            <li>REGISTRO DE MERCANCIAS</li>
+            <li>INGLES IV</li>
+            <li>PENSAMIENTO LITERARIO</li>
+            <li>TEMAS SELECTOS DE MATEMATICAS I</li>
+            <li>REACCIONES QUIMICAS:CONSERVACION DE LA MATERIA EN LA FORMACION DE NUEVAS SUSTANCIAS</li>
+            <li>CONCIENCIA HISTORICA PRESPECTIVAS DEL MEXICO ANTIGUO EN LOS CONTEXTOS GLOBALES</li>
+            <li>ESPACIO Y SOCIEDAD</li>
+            <li>TALLER DE CULTURA DIGITAL</li>
+            <li>FORMACION SOCIEMOCIONAL IV</li>
+            <li>CIENCIAS SOCIALES III</li>
+            <li>LABORATORIO DE INGLES</li>
+ </ul>
+
+            <h3>5to semestre</h3>
+        <ul>
+            <li>IMPUESTOS I</li>
+            <li>CALCULO DE NOMINA</li>
+            <li>ECONOMIA I</li>
+            <li>MATEMATICAS FINANCIERAS I</li>
+            <li>DESARROLO EMPRESARIAL</li>
+            <li>ADMINISTRACION I</li>
+            <li>FILOSOFIA</li>
+            <li>ECOLOGIA Y MEDIO AMBIENTE</li>
+            <li>PROBABILIDAD Y ESTADISTICA</li>
+            <li>ORIENTACION EDUCATIVA V</li>
+            <li>ESTRUCTURAS SOCIECONOMICAS</li>
+            
+ </ul>
+
+            <h3>6to semestre</h3>
+        <ul>
+            <li>IMPUESTOS II</li>
+            <li>FILOSOFIA </li>
+            <li>DESARROLO EMPRESARIAL</li>
+            <li>HISTORIA CONTEMPORANEA</li>
+            <li>ADMINISTRACION II</li>
+            <li>ORIENTACION EDUCATIVA VI</li>
+            <li>PSICOLOGIA</li>
+            <li>ECOLOGIA Y MEDIO AMBIENTE</li>
+            <li>MATEMATICAS FINANCIERAS II</li>
+            <li>ECONOMIA II</li>
+            <li>PROBABILIDAD Y ESTADISTICA</li>
+    </div>
+
+   
+<div class="contenido" id="Practicas">
+
+ <div class="Practicas">
+  <h2>Practicas</h2>
+   <p>En esta capacitación no solo aprenden teoría, también realizan prácticas contables que los preparan para el mundo laboral. El trabajo en equipo es fundamental, ya que aprenden a colaborar, compartir responsabilidades y resolver problemas juntos.Dejamos a continuacion algunas evidencias de trabajos de los alumnos.
+      
+ <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <img src="https://i.ibb.co/1JvhkYMN/1.png" alt="Imagen 1" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/9MCw0pZ/2.png" alt="Imagen 2" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/ccrJc8zg/3.png" alt="Imagen 3" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/gFtdbWRD/4.png" alt="Imagen 4" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/zW7TzdR2/5.png" alt="Imagen 5" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/QvxF1mcL/6.png" alt="Imagen 6" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/S4Y5z85X/7.png" alt="Imagen 7" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/fVwv65s9/8.png" alt="Imagen 8" style="width: 200px;"onclick="abrirModal(this.src)">
+        <img src="https://i.ibb.co/Z6bdf8hR/9.png.png" alt="Imagen 9" style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/pB5gH5Mr/10.png" alt="Imagen 10" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/Lz6VPHgk/12.png" alt="Imagen 11" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/JWNBZrxs/13.png" alt="Imagen 12" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/TBdcrLqR/15.png" alt="Imagen 13" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/gYZVQmw/16.png" alt="Imagen 14" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/N2B6DHQd/17.png" alt="Imagen 15" style="width: 200px;"onclick="abrirModal(this.src)">
+  <img src="https://i.ibb.co/gLv1YSCs/18.png.png.png" alt="Imagen 16" style="width: 200px;"onclick="abrirModal(this.src)">
+</div>
+
+
+
+
+    <div class="contenido" id="Actividades">
+<h2>Actividades</h2>
+<p>Además de la formación académica, participan en actividades culturales como villancicos navideños y desfile de catrinas, lo que refuerza nuestro sentido de comunidad y creatividad.
+
+<a href="https://youtu.be/1VozP56Ycus?si=s0xhfbH138gSZa4t" target="_blank">
+  Ver video en YouTube
+</a>
+
+
+<!-- Miniaturas -->
+ <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+ <img src="https://i.ibb.co/1JrC7Pkh/ab.png" alt="Imagen ab"  style="width: 200px;"onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/W4vWCXR2/ac.png" alt="Imagen ac"  style="width: 200px;"onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/KxXDBX6k/ad.png" alt="Imagen ad"style="width: 200px;" onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/YGXYb72/ae.png" alt="Imagen ae" style="width: 200px;" onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/S49h8FpQ/ai.png" alt="Imagen ai" style="width: 200px;"onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/7JfLSVF9/ao.png" alt="Imagen ao"  style="width: 200px;"onclick="abrirModal(this.src)">
+ <img src="https://i.ibb.co/mr2cy75H/au.png" alt="Imagen au"  style="width: 200px;"onclick="abrirModal(this.src)">
+</div>
+
+
+
+
+    
+<div class="contenido" id="Presentacion">
+<div class="presentacion">
+
+    <h2>Presentacion de Capacitaciones</h2>
+    <p>Con el objetivo de motivar a más estudiantes a conocer esta área, realizan en el mes de abril presentaciones donde comparten trabajos, proyectos y logros, mostrando cómo la capacitación contable transforma nuestro aprendizaje.
+
+<!-- Miniaturas -->
+ <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <img src="https://i.ibb.co/Q7FN7xz8/ba.png" alt="Imagen ba" style="width: 200px;" onclick="abrirModal(this.src)">
+   <img src="https://i.ibb.co/KjT0rSyw/bc.png" alt="Imagen bd"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/v4J1VNDN/bd.png" alt="Imagen be" style="width: 200px;" onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/fdFzGF6d/be.png" alt="Imagen bf" style="width: 200px;" onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/84L5rSnQ/bf.png" alt="Imagen bg" style="width: 200px;" onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/0RZdcmxK/bg.png" alt="Imagen bh" style="width: 200px;" onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/6JgDqfjH/bh.png" alt="Imagen bi"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/6R2MRzwM/bi.png" alt="Imagen bj"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/zH0CNXM4/bj.png" alt="Imagen bk"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/PKXq6fq/bk.png" alt="Imagen bl"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/JF02ZhQz/bl.png" alt="Imagen bm"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/fbPTWGJ/bm.png" alt="Imagen bn"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/v0HJLMv/bn.png" alt="Imagen bñ"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/v4dXTdPr/b.png" alt="Imagen bo"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/6JfKK0Gq/bo.png" alt="Imagen bq"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/VprX8bHd/bq.png" alt="Imagen br"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/84XDY77F/br.png" alt="Imagen bs"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/bj4MBnXP/bs.png" alt="Imagen bt"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/NXBmzPt/bt.png" alt="Imagen bu"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/hRLZgBZm/bu.png" alt="Imagen bo"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/b58vc34k/ca.png" alt="Imagen ca"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/0pXrRw5t/cb.png" alt="Imagen cb"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/2Y6znyqx/cc.png" alt="Imagen cc"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/Kx5kHXqz/cd.png" alt="Imagen cd"  style="width: 200px;"onclick="abrirModal(this.src)">
+   <img src="https://i.ibb.co/gZWGhM8j/ce.png" alt="Imagen ce"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/ym4xbFSc/cf.png" alt="Imagen cf"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/hJsw1FQZ/cg.png" alt="Imagen cg"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/zHLqQjMD/ch.png" alt="Imagen ch"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/PsyD0j8P/ci.png"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/G49c6KS4/cl.png" alt="Imagen cl"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/5XN4TPKf/cm.png" alt="Imagen cm"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/My7SB31z/cn.png" alt="Imagen cn"  style="width: 200px;"onclick="abrirModal(this.src)">
+     <img src="https://i.ibb.co/YvFd3m8/68.png" alt="Imagen 68"  style="width: 200px;"onclick="abrirModal(this.src)">
+    <img src="https://i.ibb.co/XfvgG8vw/69.png" alt="Imagen 69"  style="width: 200px;"onclick="abrirModal(this.src)">
+     <img src="https://i.ibb.co/jv7jsH2n/70.png" alt="Imagen 70"  style="width: 200px;"onclick="abrirModal(this.src)">
+     <img src="https://i.ibb.co/S4X11L27/71.png" alt="Imagen 71"  style="width: 200px;"onclick="abrirModal(this.src)">
+</div><hr>
+
+<h2>Emprendimiento</h2>
+<p>Algunos alumnos han llevado sus conocimientos un paso más allá, creando pequeños emprendimientos donde aplican lo aprendido. Aquí mostramos uno de ellos.Conformado por
+
+<ul>
+<li>De Luis Baez Emiliano</li>
+  <li>Garcia Romero Gael</li>
+  <li>Garcia Servin Valeria</li>
+  <li>Limon Coba Melisa</li>
+<li>Lopez Mendez Lucero</li>
+  <li>Portillo Ramos Diego</li>
+  <li>Rodriguez Sosa Jose Angel</li>
+
+</ul>
+
+
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+  <img src="https://i.ibb.co/WvJKVk9v/e.png" alt="e"  style="width: 300px;"onclick="abrirModal(this.src)" >
+  <img src="https://i.ibb.co/GQHjtnzT/o.png" alt= "o" style="width: 300px;"onclick="abrirModal(this.src)">
+</div>
+
+<a href="https://drive.google.com/drive/home" target="_blank">
+  Ver documento
+</a><hr>
+
+<a href="https://youtu.be/h8gn2ZsvbzQ?si=gEI3aBkIxR3B4oYJ" target="_blank">
+  Ver video en YouTube
+</a>
+
+
+
+
+    <div class="contenido" id="entrevistas">
+<h2>Entrevista</h2>
+<p>Tuvimos el gusto de entrevistar a los alumnos que actualmente se encuentran en la capacitacion de Contabilidad del PLANTEL-26 donde nos platican el por que decidieron esta capacitacion,como aplican lo aprendido con su vida diaria,la experiencia que han tenido , acerca de los proyectos que realizan  y por ultimo que le dirian a una persona que esta contemplando entrar a esta capacitacion.<hr>
+
+<audio controls>
+  <source src="CONTABILIDAD/LUCERO.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+ <source src="CONTABILIDAD/ANGEL.mp3" type="audio/mpeg">
+</audio>
+<audio controls>
+ <source src="CONTABILIDAD/VALERIA.mp3" type="audio/mpeg">
+</audio>
+<audio controls>
+ <source src="CONTABILIDAD/DIEGO.mp3" type="audio/mpeg">
+
+  
+</audio>
+
+
+    <!-- Modal -->
+    <div id="miModal" class="modal">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <img class="modal-content" id="imagenAmpliada">
+    </div>
+</div>
+
+<script>
+    function abrirModal(src) {
+        document.getElementById("miModal").style.display = "block";
+        document.getElementById("imagenAmpliada").src = src;
+    }
+
+    function cerrarModal() {
+        document.getElementById("miModal").style.display = "none";
+    }
+</script>
+    <div class="Conclusion" id="Conclusion">
+        <h2>Conclusion</h2>
+        <p>Esta capacitación dejada mucho más que conocimientos técnicos. Deja experiencias, momentos compartidos, aprendizajes reales y un gran orgullo por todo lo que son capaces de lograr como estudiantes.Queremos agradecer a todas las personas que nos brindaron información, apoyo y guía para poder conocer más a fondo lo que representa esta formación. A los profesores que siempre están dispuestos a enseñar con paciencia y dedicación. A los compañeros que compartieron sus experiencias y vivencias, y que nos ayudaron a entender lo valioso que es aprender en equipo.También dedicamos unas palabras especiales a quienes ya forman parte de esta capacitación. A ustedes que están dejando huella con su esfuerzo diario, con sus prácticas, exposiciones, actividades y todo lo que hacen con pasión. Y en especial, a quienes están por egresar: ¡Felicidades! Este logro no solo representa el cierre de una etapa, sino el inicio de nuevas oportunidades. Que cada paso que den esté lleno de confiza, porque aquí han formado una base fuerte, llena de esfuerzo y dedicación.No olviden todo lo que han vivido en este camino: los retos, los logros, las amistades y las enseñanzas. Llévenlos con ustedes como prueba de que son capaces de conquistar cualquier meta. Y para los que apenas están por decidir, solo puedo decirles: no lo pienses tanto, atrévete a vivir esta experiencia. Aquí se aprende, se crece, se sueña y se construyen caminos hacia un futuro mejor.¡Gracias a todos los que han sido parte! Y que vengan más generaciones dispuestas a dar lo mejor de sí.<hr>
+ATENTAMENTE: TIRZO<hr>
+
+    </div>
+<p>Creado por:
+<ul>
+  <li>Garcia Rojas Ulises Salvador</li>
+  <li>Rojas Rosas Rafael</li>
+  <li>Sanchez Mitre David Joseany</li>
+  <li>Tirzo Hernandez Estrella</li>
+<li>Zayas Lopez Luis Uriel</li>
+
+</ul>
+
+    <footer>
+        © 2025 Capacitación en Contabilidad - Plantel 26 
+]
+    </footer>
+
+</body>
+</html>
